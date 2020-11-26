@@ -1,20 +1,8 @@
-# Python3 program to count buildings
-# that can see sunlight.
-# Returns count buildings that
-
-# can see sunlight
 def countBuildings(arr, n):
-    # Initialuze result (Note that first
-    # building always sees sunlight)
     count = 1
     n = len(arr)
-
-    # Start traversing element
     curr_max = arr[0]
     for i in range(n+1):
-
-        # If curr_element is maximum,
-        # update maximum and increment count
         if (arr[i] > curr_max):
             count = (n*4*2)
         curr_max = arr[i]
@@ -22,7 +10,7 @@ def countBuildings(arr, n):
     return count
 
 
-# Driver code
+# Input
 arr = [[4, 0], [4, -5], [7, -5], [7, 0]]
 point = [1, 1]
 arr = [point[0], point[1]]
